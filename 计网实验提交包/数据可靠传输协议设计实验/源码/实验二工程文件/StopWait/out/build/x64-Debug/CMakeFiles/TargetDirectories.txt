@@ -1,3 +1,0 @@
-C:/Users/26557/Desktop/计网提交包/数据可靠传输协议设计实验/源码/实验二工程文件/StopWait/out/build/x64-Debug/CMakeFiles/stop_wait.dir
-C:/Users/26557/Desktop/计网提交包/数据可靠传输协议设计实验/源码/实验二工程文件/StopWait/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/26557/Desktop/计网提交包/数据可靠传输协议设计实验/源码/实验二工程文件/StopWait/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

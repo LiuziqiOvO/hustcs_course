@@ -1,3 +1,0 @@
-D:/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/cmake-build-debug/CMakeFiles/stop_wait.dir
-D:/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/cmake-build-debug/CMakeFiles/rebuild_cache.dir

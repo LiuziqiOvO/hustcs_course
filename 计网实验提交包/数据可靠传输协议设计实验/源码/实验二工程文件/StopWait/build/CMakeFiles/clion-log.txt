@@ -1,4 +1,0 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/d/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/build && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/d/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait -B /mnt/d/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/build"
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/d/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/build
