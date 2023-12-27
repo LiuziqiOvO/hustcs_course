@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="StopWait" targetName="stop_wait" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug_WSL" ENABLED="true" GENERATION_DIR="build" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a081e57-52ed-44b6-a36b-0f4e5ebc412c" name="变更" comment="TCP完成">
+      <change beforePath="$PROJECT_DIR$/bin/stop_wait" beforeDir="false" afterPath="$PROJECT_DIR$/bin/stop_wait" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/stop_wait.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/stop_wait.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/stop_wait.dir/src/stop_wait.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/stop_wait.dir/src/stop_wait.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/TCPRdtSender.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/TCPRdtSender.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GBNRdtSender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GBNRdtSender.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SRRdtReceiver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SRRdtReceiver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SRRdtSender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SRRdtSender.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPRdtSender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/TCPRdtSender.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stop_wait.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/stop_wait.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug_WSL" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2.4" />
+  </component>
+  <component name="ProjectId" id="2HWEgl3UTvZtKaa52AAOqz6Eh1D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/TO_Ubuntu/Ubuntu_18.04.3_64_Desktop/StopWait/src&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TO_Ubuntu\Ubuntu_18.04.3_64_Desktop\StopWait\src" />
+      <recent name="D:\TO_Ubuntu\Ubuntu_18.04.3_64_Desktop\StopWait\include" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake 应用程序.stop_wait">
+    <configuration name="stop_wait" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="StopWait" TARGET_NAME="stop_wait" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="StopWait" RUN_TARGET_NAME="stop_wait">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stopwait" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file:////wsl$/Ubuntu-20.04/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="StopWait" TARGET_NAME="stopwait" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="StopWait" RUN_TARGET_NAME="stopwait">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.stopwait" />
+      <item itemvalue="CMake 应用程序.stop_wait" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\26557\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0a081e57-52ed-44b6-a36b-0f4e5ebc412c" name="变更" comment="" />
+      <created>1668392555267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668392555267</updated>
+      <workItem from="1668392556498" duration="805000" />
+      <workItem from="1668393393574" duration="4329000" />
+      <workItem from="1668406391975" duration="6518000" />
+      <workItem from="1668412967851" duration="1173000" />
+      <workItem from="1668414157989" duration="1800000" />
+      <workItem from="1668415981330" duration="852000" />
+      <workItem from="1668419251249" duration="18491000" />
+      <workItem from="1668482891243" duration="41000" />
+      <workItem from="1668507342520" duration="640000" />
+      <workItem from="1668511134398" duration="2000" />
+      <workItem from="1668512782634" duration="2666000" />
+      <workItem from="1668573138783" duration="3000" />
+      <workItem from="1668609909610" duration="6310000" />
+      <workItem from="1668676797350" duration="1254000" />
+      <workItem from="1668697104603" duration="1865000" />
+      <workItem from="1668880632967" duration="26000" />
+      <workItem from="1668929870786" duration="9998000" />
+      <workItem from="1669006218333" duration="435000" />
+      <workItem from="1669012466660" duration="340000" />
+      <workItem from="1669021612698" duration="889000" />
+      <workItem from="1669125386822" duration="132000" />
+      <workItem from="1669730748509" duration="1539000" />
+      <workItem from="1671797433288" duration="11000" />
+      <workItem from="1671932668970" duration="3955000" />
+      <workItem from="1672072671165" duration="5915000" />
+      <workItem from="1672115964795" duration="2446000" />
+      <workItem from="1672416212788" duration="2059000" />
+    </task>
+    <task id="LOCAL-00001" summary="GBN完成">
+      <created>1668449757052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668449757057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="TCP完成">
+      <created>1668968732909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668968732909</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GBN完成" />
+    <MESSAGE value="TCP完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="TCP完成" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/SRRdtSender.cpp</url>
+          <line>17</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/SRRdtSender.cpp</url>
+          <line>37</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/SRRdtReceiver.cpp</url>
+          <line>32</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/GBNRdtReciever.cpp</url>
+          <line>45</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/TCPRdtReciever.cpp</url>
+          <line>45</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/GBNRdtSender.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="ackPkt" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

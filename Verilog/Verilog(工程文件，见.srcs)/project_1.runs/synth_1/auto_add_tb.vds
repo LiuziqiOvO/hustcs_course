@@ -1,0 +1,549 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 28 00:10:56 2022
+# Process ID: 7340
+# Current directory: D:/MyFile/code/Vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log auto_add_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source auto_add_tb.tcl
+# Log file: D:/MyFile/code/Vivado/project_1/project_1.runs/synth_1/auto_add_tb.vds
+# Journal file: D:/MyFile/code/Vivado/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source auto_add_tb.tcl -notrace
+Command: synth_design -top auto_add_tb -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19072 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 334.359 ; gain = 100.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'auto_add_tb' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'auto_add' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_AutoAdd.v:9]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v:3]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ram' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_Memory.v:10]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ram_init.txt' is read successfully [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_Memory.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (1#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_Memory.v:10]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_adder.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6104] Input port 'c_in' has an internal driver [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_adder.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (2#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_adder.v:2]
+WARNING: [Synth 8-350] instance 'Adder1' of module 'full_adder' requires 5 connections, but only 3 given [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Mux_2_1' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_Mux_2_1.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_2_1' (3#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_Mux_2_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_register.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_comparator.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (5#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1_comparator.v:1]
+WARNING: [Synth 8-350] instance 'COMP' of module 'comparator' requires 5 connections, but only 3 given [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v:60]
+WARNING: [Synth 8-350] instance 'Adder2' of module 'full_adder' requires 5 connections, but only 3 given [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (6#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.2_FSM.v:9]
+	Parameter START bound to: 0 - type: integer 
+	Parameter COMPUTE_SUM bound to: 1 - type: integer 
+	Parameter GET_NEXT bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'start' should be on the sensitivity list [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.2_FSM.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (7#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.2_FSM.v:9]
+WARNING: [Synth 8-3848] Net DONE in module/entity auto_add does not have driver. [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_AutoAdd.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'auto_add' (8#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_AutoAdd.v:9]
+WARNING: [Synth 8-85] always block has no event control specified [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:20]
+WARNING: [Synth 8-3848] Net rst in module/entity auto_add_tb does not have driver. [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:8]
+WARNING: [Synth 8-3848] Net start in module/entity auto_add_tb does not have driver. [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'auto_add_tb' (9#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:7]
+WARNING: [Synth 8-3331] design ram has unconnected port clk
+WARNING: [Synth 8-3331] design auto_add has unconnected port DONE
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 388.656 ; gain = 154.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Auto_Add:rst to constant 0 [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:12]
+WARNING: [Synth 8-3295] tying undriven pin Auto_Add:start to constant 0 [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.3_tb.v:12]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 388.656 ; gain = 154.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 388.656 ; gain = 154.977
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHz'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHz]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD_SUM'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD_NEXT'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[0]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[1]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[2]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[3]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[7]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/MyFile/code/Vivado/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 710.043 ; gain = 1.289
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 710.043 ; gain = 476.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 710.043 ; gain = 476.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 710.043 ; gain = 476.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ram" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sum_sel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_sum" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StateNext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                             0001 |                               00
+             COMPUTE_SUM |                             0010 |                               01
+                GET_NEXT |                             0100 |                               10
+                    DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 710.043 ; gain = 476.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module Mux_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[31]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[30]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[29]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[28]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[27]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[26]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[25]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[24]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[23]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[22]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[21]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[20]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[19]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[18]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[17]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[16]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[15]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[14]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[13]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[12]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[11]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[10]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[9]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[8]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[7]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[6]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[5]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[4]) is unused and will be removed from module auto_add_tb.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 710.043 ; gain = 476.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 730.797 ; gain = 497.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 730.797 ; gain = 497.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[3]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[2]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[1]) is unused and will be removed from module auto_add_tb.
+WARNING: [Synth 8-3332] Sequential element (Auto_Add/adder/NEXT/q_reg[0]) is unused and will be removed from module auto_add_tb.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'auto_add_tb' to reference 'auto_add' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'auto_add' to reference 'FSM' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |FDRE |     4|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         |     5|
+|2     |  Auto_Add |auto_add |     5|
+|3     |    fsm    |FSM      |     5|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 740.648 ; gain = 185.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 740.648 ; gain = 506.969
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 105 Warnings, 57 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 754.934 ; gain = 533.973
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/MyFile/code/Vivado/project_1/project_1.runs/synth_1/auto_add_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file auto_add_tb_utilization_synth.rpt -pb auto_add_tb_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 754.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 28 00:11:26 2022...

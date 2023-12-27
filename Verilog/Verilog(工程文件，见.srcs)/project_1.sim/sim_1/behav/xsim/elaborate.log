@@ -1,0 +1,21 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9288f956457d447a92af9d38609fe762 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot auto_add_tb_behav xil_defaultlib.auto_add_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/4.1.v" Line 3. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ram(DATA_WIDTH=32,ADDR_WIDTH=32)
+Compiling module xil_defaultlib.full_adder(WIDTH=32)
+Compiling module xil_defaultlib.Mux_2_1(WIDTH=32)
+Compiling module xil_defaultlib.register(WIDTH=32)
+Compiling module xil_defaultlib.comparator(WIDTH=32)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.auto_add
+Compiling module xil_defaultlib.auto_add_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot auto_add_tb_behav

@@ -1,0 +1,2074 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 30 10:34:22 2022
+# Process ID: 17968
+# Current directory: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11836 D:\lmq\yanshou\cpu_for_tw\Single_Cycle_CPU\Single_Cycle_CPU_1_int\mips_cpu\mips_cpu.xpr
+# Log file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/vivado.log
+# Journal file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 882.789 ; gain = 133.543
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 10:36:04 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 10:36:04 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292746846A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210292746846A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 10:45:04 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 10:45:04 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1632.977 ; gain = 0.000
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Oct 30 10:55:43 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 10:57:43 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 10:57:43 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 2800 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1745.887 ; gain = 106.297
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 11:05:23 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 11:05:23 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.887 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port IR on this module [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+ERROR: [VRFC 10-2063] Module <divider> not found while processing module instance <divider_cpu1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:40]
+ERROR: [VRFC 10-2063] Module <REGISTER_FLIP_FLOP_PC> not found while processing module instance <REGISTER_FILE_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:417]
+ERROR: [VRFC 10-2063] Module <RAM_Data_RAM> not found while processing module instance <RAM_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:429]
+ERROR: [VRFC 10-2063] Module <Multiplexer_2> not found while processing module instance <MUX_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:435]
+ERROR: [VRFC 10-2063] Module <OR_GATE_4_INPUTS> not found while processing module instance <GATE_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:441]
+ERROR: [VRFC 10-2063] Module <Shifter_32_bit> not found while processing module instance <Shifter_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:448]
+ERROR: [VRFC 10-2063] Module <NOT_GATE> not found while processing module instance <GATE_2> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:453]
+ERROR: [VRFC 10-2063] Module <REGISTER_FLIP_FLOP> not found while processing module instance <REGISTER_FILE_2> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:456]
+ERROR: [VRFC 10-2063] Module <Multiplexer_bus_2> not found while processing module instance <MUX_2> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:467]
+ERROR: [VRFC 10-2063] Module <OR_GATE> not found while processing module instance <GATE_3> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:492]
+ERROR: [VRFC 10-2063] Module <ROM_Instr_ROM> not found while processing module instance <ROM_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:497]
+ERROR: [VRFC 10-2063] Module <AND_GATE> not found while processing module instance <GATE_4> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:500]
+ERROR: [VRFC 10-2063] Module <Comparator> not found while processing module instance <Comparator_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:510]
+ERROR: [VRFC 10-2063] Module <Adder> not found while processing module instance <ADDER2C_1> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:529]
+ERROR: [VRFC 10-2063] Module <REGISTER_FLIP_FLOP_Int1_Request_Register> not found while processing module instance <REGISTER_FILE_5> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:641]
+ERROR: [VRFC 10-2063] Module <REGISTER_FLIP_FLOP_IE> not found while processing module instance <REGISTER_FILE_6> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:657]
+ERROR: [VRFC 10-2063] Module <Multiplexer_bus_16> not found while processing module instance <MUX_10> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:701]
+ERROR: [VRFC 10-2063] Module <AND_GATE_3_INPUTS> not found while processing module instance <GATE_21> [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:727]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1745.887 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.887 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/xsim.dir/tb_cpu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 12:55:23 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1745.887 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1752.406 ; gain = 6.520
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1754.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1754.648 ; gain = 0.031
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2000000 ns
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1760.715 ; gain = 1.223
+run 2000000 ns
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.078 ; gain = 0.000
+run 20000000 ns
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:01:12 . Memory (MB): peak = 1762.078 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 4136410 ns
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1765.121 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 13:14:11 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 13:14:11 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+run all
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1768.805 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 12331815 ns
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:01:41 . Memory (MB): peak = 1770.555 ; gain = 1.750
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 13:20:39 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1770.648 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1770.648 ; gain = 0.000
+run 12331815 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1771.316 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1771.316 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1771.316 ; gain = 0.000
+run 12331815 ns
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 1771.316 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 14:06:05 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 14:06:05 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1774.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1774.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1774.410 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:39 ; elapsed = 00:02:17 . Memory (MB): peak = 1774.410 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 14:44:09 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 14:44:09 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Oct 30 15:08:05 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 15:10:42 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 15:10:42 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4023 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_for_display/clk_in1' is not directly connected to top level port. Synthesis is ignored for d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf but preserved for implementation. [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf:297]
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2663.266 ; gain = 2.688
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2663.266 ; gain = 2.688
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2828 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 768 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 2769.805 ; gain = 984.352
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2943.359 ; gain = 155.082
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 15:31:44 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 15:32:40 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Oct 30 15:33:40 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 4
+[Sun Oct 30 15:43:51 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 4
+[Sun Oct 30 15:45:00 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 15:55:21 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3184.141 ; gain = 0.000
+ERROR: [Labtools 27-2312] Device xc7a100t_0 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
+Use open_hw_target to re-register the hardware device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 16:38:59 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 16:38:59 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 16:55:09 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 16:55:09 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3184.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3184.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 3184.141 ; gain = 0.000
+run 12331815 ns
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 3184.141 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 17:21:04 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 17:21:04 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Oct 30 17:40:06 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 17:42:29 2022] Launched synth_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Sun Oct 30 17:42:29 2022] Launched impl_1...
+Run output will be captured here: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746846A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292746846A

@@ -1,0 +1,78 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:62]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.divider(N=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav

@@ -1,0 +1,44 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../verilog/circuit/ALU.v" \
+"../../../../../verilog/gates/AND_GATE.v" \
+"../../../../../verilog/gates/AND_GATE_10_INPUTS.v" \
+"../../../../../verilog/gates/AND_GATE_5_INPUTS.v" \
+"../../../../../verilog/gates/AND_GATE_6_INPUTS.v" \
+"../../../../../verilog/gates/AND_GATE_7_INPUTS.v" \
+"../../../../../verilog/gates/AND_GATE_8_INPUTS.v" \
+"../../../../../verilog/arithmetic/Adder.v" \
+"../../../../../verilog/wiring/Bit_Extender_12_32_SIGN.v" \
+"../../../../../verilog/wiring/Bit_Extender_20_32_SIGN.v" \
+"../../../../../verilog/wiring/Bit_Extender_8_32.v" \
+"../../../../../verilog/circuit/Control.v" \
+"../../../../../verilog/circuit/Control_2.v" \
+"../../../../../verilog/circuit/Control_op.v" \
+"../../../../../verilog/io/Counter.v" \
+"../../../../../verilog/io/FPGADigit.v" \
+"../../../../../verilog/plexers/Multiplexer_bus_2.v" \
+"../../../../../verilog/gates/NOT_GATE.v" \
+"../../../../../verilog/gates/OR_GATE.v" \
+"../../../../../verilog/gates/OR_GATE_12_INPUTS.v" \
+"../../../../../verilog/gates/OR_GATE_20_INPUTS.v" \
+"../../../../../verilog/gates/OR_GATE_6_INPUTS.v" \
+"../../../../../verilog/gates/OR_GATE_8_INPUTS.v" \
+"../../../../../verilog/memory/RAM_RAM.v" \
+"../../../../../verilog/memory/REGISTER_FLIP_FLOP_PC.v" \
+"../../../../../verilog/memory/ROM_ROM.v" \
+"../../../../../verilog/circuit/RegFile.v" \
+"../../../../../verilog/circuit/RiscV_DataPath.v" \
+"../../../../../../../../project_1/project_1.srcs/sources_1/new/circuit/RiscV_Top.v" \
+"../../../../../verilog/arithmetic/Shifter_12_bit.v" \
+"../../../../../verilog/arithmetic/Shifter_20_bit.v" \
+"../../../../../verilog/io/decoder3_8.v" \
+"../../../../../verilog/io/display_sel.v" \
+"../../../../../verilog/io/divider.v" \
+"../../../../../verilog/io/sevenseg_dec.v" \
+"../../../../../verilog/circuit/Tb_RiscV_Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

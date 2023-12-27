@@ -1,0 +1,12 @@
+set_property SRC_FILE_INFO {cfile:d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc rfile:../mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:nolabel_line70/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc rfile:../../xdc/LogisimToplevelShell.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.1
+set_property src_info {type:XDC file:2 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IR1_IBUF]
+set_property src_info {type:XDC file:2 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IR2_IBUF]
+set_property src_info {type:XDC file:2 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IR3_IBUF]
+set_property src_info {type:XDC file:2 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IR4_IBUF]

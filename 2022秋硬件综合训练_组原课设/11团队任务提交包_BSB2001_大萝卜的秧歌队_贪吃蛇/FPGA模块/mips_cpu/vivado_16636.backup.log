@@ -1,0 +1,1575 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 25 00:47:45 2022
+# Process ID: 16636
+# Current directory: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21932 D:\lmq\yanshou\cpu_for_tw\Single_Cycle_CPU\Single_Cycle_CPU_1_int\mips_cpu\mips_cpu.xpr
+# Log file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/vivado.log
+# Journal file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 872.961 ; gain = 137.465
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: LogisimToplevelShell
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 998.105 ; gain = 108.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LogisimToplevelShell' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_CPU_1_int' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:9]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized0' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 50000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized1' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized2' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_PC' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_PC. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_PC' (2#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_Data_RAM' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:9]
+INFO: [Synth 8-3876] $readmem data file 'D:/lmq/yanshou/tw/test_for_move/data_test_for_move.txt' is read successfully [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Data_RAM' (3#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_2' (4#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (5#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v:9]
+	Parameter ShifterMode bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_32_bit' (6#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOT_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_GATE' (7#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP' (8#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2' (9#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (10#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Instr_ROM' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:1]
+INFO: [Synth 8-3876] $readmem data file 'D:/lmq/yanshou/cpu_for_tw/ccab_test.txt' is read successfully [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Instr_ROM' (11#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (12#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (13#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v:9]
+	Parameter ExtendedBits bound to: 33 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (14#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized0' (14#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_Int1_Request_Register' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_Int1_Request_Register. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_Int1_Request_Register' (15#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_IE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_IE. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_IE' (16#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_16' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_16' (17#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_3_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_3_INPUTS' (18#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LogisimCounter' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:9]
+	Parameter mode bound to: 0 - type: integer 
+	Parameter ClkEdge bound to: 1 - type: integer 
+	Parameter max_val bound to: -1 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_counter_value_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:122]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_counter_value_reg in module LogisimCounter. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'LogisimCounter' (19#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_EPC' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_EPC. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_EPC' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP__parameterized0. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized0' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_5_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_5_INPUTS' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator__parameterized0' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Alu_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_10_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_10_INPUTS' (22#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_8_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_8_INPUTS' (23#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_14_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_14_INPUTS' (24#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_7_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_7_INPUTS' (25#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_13_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_13_INPUTS' (26#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Alu_Controller' (27#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Signal_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_7_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_7_INPUTS' (28#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_11_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_11_INPUTS' (29#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_5_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_5_INPUTS' (30#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_6_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_6_INPUTS' (31#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_4_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_4_INPUTS' (32#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Signal_Controller' (33#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_Controller' (34#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Regifile' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Regifile' (35#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'L_type_Write_Data_Generator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_4' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v:9]
+	Parameter NrOfBits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_4' (36#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'L_type_Write_Data_Generator' (37#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ImmGenerator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:2]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGenerator' (38#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_Request_Register_1_int' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:3]
+INFO: [Synth 8-6157] synthesizing module 'D_Flip_Flop' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:2]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_next_state_reg in module D_Flip_Flop. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:29]
+WARNING: [Synth 8-3848] Net Q_bar in module/entity D_Flip_Flop does not have driver. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'D_Flip_Flop' (39#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:2]
+WARNING: [Synth 8-350] instance 'D_Flip_4_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:49]
+WARNING: [Synth 8-350] instance 'D_Flip_4_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:56]
+WARNING: [Synth 8-350] instance 'D_Flip_1_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:64]
+WARNING: [Synth 8-350] instance 'D_Flip_1_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:71]
+WARNING: [Synth 8-350] instance 'D_Flip_2_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:80]
+WARNING: [Synth 8-350] instance 'D_Flip_2_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:87]
+WARNING: [Synth 8-350] instance 'D_Flip_3_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:95]
+WARNING: [Synth 8-350] instance 'D_Flip_3_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_Request_Register_1_int' (40#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (41#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_CPU_1_int' (42#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:9]
+WARNING: [Synth 8-350] instance 'Single_Cycle_CPU_1_int_0' of module 'Single_Cycle_CPU_1_int' requires 17 connections, but only 15 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:46]
+INFO: [Synth 8-6157] synthesizing module 'FPGADigit' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/FPGADigit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized3' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 5000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized3' (42#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/Counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (43#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/Counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:2]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (44#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'display_sel' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:2]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'display_sel' (45#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_dec' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:2]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:7]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_dec' (46#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FPGADigit' (47#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/FPGADigit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/.Xil/Vivado-16636-LAPTOP-TTBI6Q3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (48#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/.Xil/Vivado-16636-LAPTOP-TTBI6Q3I/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'nolabel_line70' of module 'clk_wiz_0' requires 4 connections, but only 2 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:70]
+WARNING: [Synth 8-3848] Net h_sync in module/entity LogisimToplevelShell does not have driver. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:38]
+WARNING: [Synth 8-3848] Net v_sync in module/entity LogisimToplevelShell does not have driver. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:39]
+WARNING: [Synth 8-3848] Net vga in module/entity LogisimToplevelShell does not have driver. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'LogisimToplevelShell' (49#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:9]
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Q_bar
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Enable
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Tick
+WARNING: [Synth 8-3331] design ImmGenerator has unconnected port IR[1]
+WARNING: [Synth 8-3331] design ImmGenerator has unconnected port IR[0]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port h_sync
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port v_sync
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[11]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[10]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[9]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[8]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[7]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[6]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[5]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[4]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[3]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[2]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[1]
+WARNING: [Synth 8-3331] design LogisimToplevelShell has unconnected port vga[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1048.551 ; gain = 158.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1048.551 ; gain = 158.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1048.551 ; gain = 158.883
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'nolabel_line70'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'nolabel_line70/inst'
+Finished Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'nolabel_line70/inst'
+Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'nolabel_line70/inst'
+Finished Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'nolabel_line70/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LogisimToplevelShell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LogisimToplevelShell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc]
+WARNING: [Vivado 12-507] No nets matched 'IR1_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'IR2_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'IR3_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'IR4_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:6]
+Finished Parsing XDC File [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/LogisimToplevelShell_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1428.535 ; gain = 538.867
+143 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1428.535 ; gain = 538.867
+close_design
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:49]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:50]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 200000 ns
+run 80000000 ns
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:01:42 . Memory (MB): peak = 1444.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 80000000 ns
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1444.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 80000000 ns
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:01:01 . Memory (MB): peak = 1444.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 60 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 105 ns
+run 20 ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_cpu/tb_cpu/Regifile_1/registers}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 105 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 20000000 ns
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 20000000 ns
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1444.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 20000000 ns
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:01:16 . Memory (MB): peak = 1444.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cpu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_cpu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1444.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 709e1caddd16400e97131c3e6970d202 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_cpu_behav xil_defaultlib.tb_cpu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port s_rate_1 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:69]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:82]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:85]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:97]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Preset [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divider(N=10000000)
+Compiling module xil_defaultlib.divider(N=500000)
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.divider(N=10000)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.RAM_Data_RAM
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.ROM_Instr_ROM
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_Int1_Request_...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_IE
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=-1...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.OR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.Comparator(NrOfBits=3)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.AND_GATE_10_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.AND_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_14_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_13_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Alu_Controller
+Compiling module xil_defaultlib.AND_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_11_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Signal_Controller
+Compiling module xil_defaultlib.Single_Cycle_Controller
+Compiling module xil_defaultlib.Regifile
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=8)
+Compiling module xil_defaultlib.L_type_Write_Data_Generator
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.D_Flip_Flop
+Compiling module xil_defaultlib.Interrupt_Request_Register_1_int
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Single_Cycle_CPU_1_int
+Compiling module xil_defaultlib.tb_cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cpu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cpu_behav -key {Behavioral:sim_1:Functional:tb_cpu} -tclbatch {tb_cpu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_cpu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1444.238 ; gain = 0.000
+run 20000000 ns
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:02:17 . Memory (MB): peak = 1444.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 25 02:26:50 2022...

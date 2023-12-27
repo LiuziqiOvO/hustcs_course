@@ -1,0 +1,86 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_Flip_Flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Request_Register_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L_type_Write_Data_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_11_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_13_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_14_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_Data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_IE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_Int1_Request_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instr_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU_1_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sim_1/new/tb_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpu

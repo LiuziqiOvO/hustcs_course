@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 25 00:47:45 2022
+# Process ID: 16636
+# Current directory: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21932 D:\lmq\yanshou\cpu_for_tw\Single_Cycle_CPU\Single_Cycle_CPU_1_int\mips_cpu\mips_cpu.xpr
+# Log file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/vivado.log
+# Journal file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source tb_cpu.tcl
+run 200000 ns
+run 80000000 ns
+close_sim
+launch_simulation
+source tb_cpu.tcl
+run 80000000 ns
+close_sim
+launch_simulation
+source tb_cpu.tcl
+run 80000000 ns
+restart
+run 60 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+run 105 ns
+run 20 ns
+current_wave_config {Untitled 3}
+add_wave {{/tb_cpu/tb_cpu/Regifile_1/registers}} 
+restart
+run 105 ns
+run 20 ns
+run 20 ns
+close_sim
+launch_simulation
+source tb_cpu.tcl
+run 20000000 ns
+run 20000000 ns
+close_sim
+launch_simulation
+source tb_cpu.tcl
+run 20000000 ns
+close_sim
+launch_simulation
+source tb_cpu.tcl
+run 20000000 ns
+close_sim

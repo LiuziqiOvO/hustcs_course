@@ -1,0 +1,768 @@
+
+*** Running vivado
+    with args -log RiscV_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RiscV_Top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RiscV_Top.tcl -notrace
+Command: synth_design -top RiscV_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16812 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 335.367 ; gain = 101.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RiscV_Top' [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/circuit/RiscV_Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+	Parameter N bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (1#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized0' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+	Parameter N bound to: 5000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized0' (1#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized1' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized1' (1#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Control' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (2#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized0' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized0' (2#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Control_op' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control_op.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_10_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_10_INPUTS' (3#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_8_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_8_INPUTS' (4#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOT_GATE' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_GATE' (5#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_12_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_12_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_12_INPUTS' (6#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_12_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_8_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_8_INPUTS' (7#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Control_op' (8#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control_op.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Control_2' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_5_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_5_INPUTS' (9#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_20_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_20_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_20_INPUTS' (10#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_20_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_7_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_7_INPUTS' (11#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_6_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_6_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_6_INPUTS' (12#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE_6_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (13#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_6_INPUTS' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_6_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_6_INPUTS' (14#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/gates/AND_GATE_6_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Control_2' (15#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (16#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/Control.v:9]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Adder.v:9]
+	Parameter ExtendedBits bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (17#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Adder.v:9]
+WARNING: [Synth 8-350] instance 'adder' of module 'Adder' requires 5 connections, but only 4 given [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:29]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (18#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_PC' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+	Parameter ActiveLevel bound to: 32 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_PC' (19#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ROM_ROM' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/ROM_ROM.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_ROM' (20#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/ROM_ROM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Mux__parameterized0' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux__parameterized0' (20#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RegFile.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (21#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RegFile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (22#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_RAM' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/RAM_RAM.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_RAM' (23#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/memory/RAM_RAM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_8_32' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_8_32.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_8_32' (24#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_8_32.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Mux__parameterized1' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux__parameterized1' (24#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/plexers/Multiplexer_bus_2.v:9]
+WARNING: [Synth 8-689] width (32) of port connection 'MuxOut' does not match port width (12) of module 'Mux__parameterized1' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:55]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_12_32_SIGN' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_12_32_SIGN' (25#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_12_32_SIGN.v:9]
+WARNING: [Synth 8-689] width (32) of port connection 'imm_in' does not match port width (12) of module 'Bit_Extender_12_32_SIGN' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_12_bit' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Shifter_12_bit.v:9]
+	Parameter ShifterMode bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_12_bit' (26#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Shifter_12_bit.v:9]
+WARNING: [Synth 8-689] width (32) of port connection 'Result' does not match port width (12) of module 'Shifter_12_bit' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'imm_in' does not match port width (12) of module 'Bit_Extender_12_32_SIGN' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:61]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_20_bit' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Shifter_20_bit.v:9]
+	Parameter ShifterMode bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_20_bit' (27#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/arithmetic/Shifter_20_bit.v:9]
+WARNING: [Synth 8-689] width (32) of port connection 'Result' does not match port width (20) of module 'Shifter_20_bit' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:63]
+INFO: [Synth 8-6157] synthesizing module 'Bit_Extender_20_32_SIGN' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_20_32_SIGN.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Bit_Extender_20_32_SIGN' (28#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/wiring/Bit_Extender_20_32_SIGN.v:9]
+WARNING: [Synth 8-689] width (32) of port connection 'imm_in' does not match port width (20) of module 'Bit_Extender_20_32_SIGN' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:64]
+WARNING: [Synth 8-350] instance 'ALU4PC' of module 'ALU' requires 6 connections, but only 4 given [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (29#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FPGADigit' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/FPGADigit.v:9]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized2' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+	Parameter N bound to: 5000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized2' (29#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/Counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (30#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/Counter.v:2]
+WARNING: [Synth 8-689] width (3) of port connection 'out' does not match port width (33) of module 'Counter' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/FPGADigit.v:35]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/decoder3_8.v:2]
+INFO: [Synth 8-226] default block is never used [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/decoder3_8.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (31#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/decoder3_8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'display_sel' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/display_sel.v:2]
+INFO: [Synth 8-226] default block is never used [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/display_sel.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'display_sel' (32#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/display_sel.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_dec' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/sevenseg_dec.v:2]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/sevenseg_dec.v:7]
+INFO: [Synth 8-226] default block is never used [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/sevenseg_dec.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_dec' (33#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/sevenseg_dec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FPGADigit' (34#1) [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/FPGADigit.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'RiscV_Top' (35#1) [D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/circuit/RiscV_Top.v:1]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[9]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[8]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[7]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[6]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[5]
+WARNING: [Synth 8-3331] design RAM_RAM has unconnected port addr[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port Uret
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.164 ; gain = 157.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.164 ; gain = 157.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 391.164 ; gain = 157.594
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/xdc/LogisimToplevelShell.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led'. [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/xdc/LogisimToplevelShell.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/xdc/LogisimToplevelShell.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/xdc/LogisimToplevelShell.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/xdc/LogisimToplevelShell.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RiscV_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RiscV_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 751.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 751.570 ; gain = 518.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 751.570 ; gain = 518.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 751.570 ; gain = 518.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:31]
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 751.570 ; gain = 518.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_39'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_49'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_62'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_90'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_107'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_129'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_153'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_182'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_184'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_197'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_198'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_211'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_212'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_3' (NOT_GATE) to 'Controlor/Control_op/GATE_260'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_11'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_32'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_71'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_109'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_135'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_154'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_171'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_178'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_180'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_183'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_200'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_207'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_209'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_214'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_233'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_250'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_4' (NOT_GATE) to 'Controlor/Control_op/GATE_256'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_18'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_19'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_34'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_37'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_41'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_46'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_73'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_112'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_118'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_127'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_140'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_174'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_186'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_208'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_213'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_8' (NOT_GATE) to 'Controlor/Control_op/GATE_215'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_16'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_27'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_33'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_43'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_48'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_56'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_57'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_58'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_63'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_72'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_74'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_76'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_91'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_108'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_115'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_126'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_134'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_138'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_139'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_143'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_164'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_167'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_176'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_177'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_194'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_202'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_210'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_230'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_231'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_258'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_259'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_12' (NOT_GATE) to 'Controlor/Control_op/GATE_261'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_14'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_21'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_35'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_45'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_70'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_94'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_95'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_116'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_131'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_141'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_146'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_147'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_155'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_170'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_224'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_227'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_13' (NOT_GATE) to 'Controlor/Control_op/GATE_257'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_15' (NOT_GATE) to 'Controlor/Control_op/GATE_20'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_15' (NOT_GATE) to 'Controlor/Control_op/GATE_28'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_15' (NOT_GATE) to 'Controlor/Control_op/GATE_30'
+INFO: [Synth 8-223] decloning instance 'Controlor/Control_op/GATE_15' (NOT_GATE) to 'Controlor/Control_op/GATE_38'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 28    
+	 297 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RiscV_Top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module REGISTER_FLIP_FLOP_PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ROM_ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 297 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module RegFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module Mux__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module Shifter_12_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+Module Shifter_20_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 4     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module divider__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module decoder3_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "u_divider1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider1/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/ALU.v:48]
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+INFO: [Synth 8-5545] ROM "u_divider/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_divider1/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design datapath has unconnected port Uret
+WARNING: [Synth 8-3332] Sequential element (Result_reg[31]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[30]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[29]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[28]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[27]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[26]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[25]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[24]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[23]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[22]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[21]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[20]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[19]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[18]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[17]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[16]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[15]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[14]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[13]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[12]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[11]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[10]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[9]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[8]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[7]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[6]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[5]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[4]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[3]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[2]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[1]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (Result_reg[0]) is unused and will be removed from module ALU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 751.570 ; gain = 518.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------+-----------+----------------------+-----------------+
+|Datapath    | RAM/mem_reg     | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|Datapath    | RegFile/Reg_reg | Implied   | 32 x 32              | RAM32M x 12     | 
++------------+-----------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 786.164 ; gain = 552.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 808.543 ; gain = 574.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------+-----------+----------------------+-----------------+
+|Datapath    | RAM/mem_reg     | Implied   | 16 x 32              | RAM16X1S x 32   | 
+|Datapath    | RegFile/Reg_reg | Implied   | 32 x 32              | RAM32M x 12     | 
++------------+-----------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |   360|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    64|
+|5     |LUT2     |   116|
+|6     |LUT3     |  1042|
+|7     |LUT4     |   178|
+|8     |LUT5     |   304|
+|9     |LUT6     |   579|
+|10    |MUXF7    |    70|
+|11    |MUXF8    |     1|
+|12    |RAM16X1S |    32|
+|13    |RAM32M   |    12|
+|14    |FDCE     |    64|
+|15    |FDRE     |   135|
+|16    |LD       |    32|
+|17    |IBUF     |     6|
+|18    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+------------------------+------+
+|      |Instance        |Module                  |Cells |
++------+----------------+------------------------+------+
+|1     |top             |                        |  3017|
+|2     |  Datapath      |datapath                |  2769|
+|3     |    ALU         |ALU                     |  1427|
+|4     |    LedData_Reg |REGISTER_FLIP_FLOP_PC   |    51|
+|5     |    PC_Reg      |REGISTER_FLIP_FLOP_PC_0 |  1188|
+|6     |    RAM         |RAM_RAM                 |    40|
+|7     |    RegFile     |RegFile                 |    63|
+|8     |  FPGADigit     |FPGADigit               |    65|
+|9     |    u_counter   |Counter                 |    13|
+|10    |    u_divider   |divider__parameterized2 |    52|
+|11    |  u_divider1    |divider                 |    53|
+|12    |  u_divider2    |divider__parameterized0 |    52|
+|13    |  u_divider3    |divider__parameterized1 |    53|
++------+----------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 850.391 ; gain = 256.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 850.391 ; gain = 616.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 516 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+224 Infos, 52 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 850.391 ; gain = 629.887
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/mips_cpu/mips_cpu.runs/synth_1/RiscV_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RiscV_Top_utilization_synth.rpt -pb RiscV_Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 850.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 14 17:14:51 2022...

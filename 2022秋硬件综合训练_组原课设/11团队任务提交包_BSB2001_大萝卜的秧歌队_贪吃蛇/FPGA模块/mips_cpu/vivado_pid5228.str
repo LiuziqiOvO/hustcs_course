@@ -1,0 +1,224 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 5228
+License: Customer
+
+Current time: 	Tue Oct 18 20:39:44 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 3 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	¿Ó‹¯∆Ë
+User home directory: C:/Users/¿Ó‹¯∆Ë
+User working directory: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/¿Ó‹¯∆Ë/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/¿Ó‹¯∆Ë/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/¿Ó‹¯∆Ë/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/vivado.log
+Vivado journal file location: 	D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/vivado.jou
+Engine tmp dir: 	D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/.Xil/Vivado-5228-LAPTOP-TTBI6Q3I
+
+Xilinx Environment Variables
+----------------------------
+EMULATOR_SDK_ROOT: D:\Program Files\MobileAppEngine\EmulatorSdk
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 531 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57436kb) [00:00:08]
+// [Engine Memory]: 495 MB (+367979kb) [00:00:08]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\lmq\yanshou\cpu_for_tw\Single_Cycle_CPU\Single_Cycle_CPU_1_int\mips_cpu\mips_cpu.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.xpr 
+// [GUI Memory]: 65 MB (+4832kb) [00:00:09]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 569 MB. GUI used memory: 37 MB. Current time: 10/18/22 8:39:46 PM CST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// [Engine Memory]: 569 MB (+51145kb) [00:00:14]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 604 MB (+7376kb) [00:00:15]
+// Project name: mips_cpu; location: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu; part: xc7a100tcsg324-1
+// [Engine Memory]: 640 MB (+5903kb) [00:00:19]
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 865.668 ; gain = 122.098 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 676 MB (+3539kb) [00:00:24]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 41 MB. Current time: 10/18/22 8:40:01 PM CST
+// PAPropertyPanels.initPanels (LogisimToplevelShell.v) elapsed time: 0.3s
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LogisimToplevelShell (LogisimToplevelShell.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LogisimToplevelShell (LogisimToplevelShell.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LogisimToplevelShell (LogisimToplevelShell.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LogisimToplevelShell (LogisimToplevelShell.v), Single_Cycle_CPU_1_int_0 : Single_Cycle_CPU_1_int (Single_Cycle_CPU_1_int.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LogisimToplevelShell (LogisimToplevelShell.v), Single_Cycle_CPU_1_int_0 : Single_Cycle_CPU_1_int (Single_Cycle_CPU_1_int.v), RAM_1 : RAM_Data_RAM (RAM_Data_RAM.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 72 MB (+4633kb) [00:00:45]
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 254, 223); // ce (w, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 322, 220); // ce (w, ck)
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "regi"); // l (aQ, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 467, 146); // ce (w, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 254, 114); // ce (w, ck)
+// [GUI Memory]: 77 MB (+988kb) [00:01:29]
+// [GUI Memory]: 81 MB (+62kb) [00:01:54]
+// Elapsed time: 126 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 76, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 77, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LogisimToplevelShell.xdc]", 78, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LogisimToplevelShell.xdc]", 78, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LogisimToplevelShell.xdc]", 78, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 520, 67); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 520, 67, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 561, 89); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 635, 79); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 556, 161); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 556, 161, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("LogisimToplevelShell.xdc", 581, 155); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+// [GUI Memory]: 88 MB (+3629kb) [00:04:57]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 577, 176); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 578, 195); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 581, 217); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 566, 237); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("LogisimToplevelShell.xdc", 510, 244); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 509, 244, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("LogisimToplevelShell.xdc", 577, 257); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 581, 238); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 235ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 705ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 333 seconds
+selectCodeEditor("LogisimToplevelShell.xdc", 561, 151); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 434, 72); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 540, 95); // ce (w, ck)
+typeControlKey((HResource) null, "LogisimToplevelShell.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 484, 185); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 577, 179); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 480, 283); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 462, 276); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 408, 47); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 407, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("LogisimToplevelShell.xdc", 407, 47); // ce (w, ck)
+typeControlKey((HResource) null, "LogisimToplevelShell.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 407, 47); // ce (w, ck)
+typeControlKey((HResource) null, "LogisimToplevelShell.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 346, 63); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 444, 67); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 491, 118); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 342, 206); // ce (w, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 330, 233); // ce (w, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 333, 280); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.v", 1); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// [GUI Memory]: 93 MB (+504kb) [00:12:03]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 1); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 534, 307); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 0); // k (j, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 209, 295); // ce (w, ck)
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 209, 296, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 241, 416); // ce (w, ck)
+// Elapsed time: 95 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LogisimToplevelShell.xdc", 1); // k (j, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 390, 108); // ce (w, ck)
+selectCodeEditor("LogisimToplevelShell.xdc", 344, 55); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Single_Cycle_CPU_1_int.v", 0); // k (j, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("Single_Cycle_CPU_1_int.v", 414, 248); // ce (w, ck)
+// [GUI Memory]: 98 MB (+446kb) [00:20:18]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1722 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4825 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4753 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5312 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3128 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7493 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1253 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4934 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10038 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4919 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4728 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10796 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4772 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4583 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5246 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 14555 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13925 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4749 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4756 ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 38 MB. Current time: 10/18/22 9:10:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 35 MB. Current time: 10/18/22 9:40:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 34 MB. Current time: 10/18/22 10:10:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 34 MB. Current time: 10/18/22 10:40:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 36 MB. Current time: 10/18/22 11:10:15 PM CST

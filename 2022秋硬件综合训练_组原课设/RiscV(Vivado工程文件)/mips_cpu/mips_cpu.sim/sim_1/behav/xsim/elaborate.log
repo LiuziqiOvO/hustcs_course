@@ -1,0 +1,24 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 85a7070363384764a1624aabc762b79c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Tb_RiscV_Top_behav xil_defaultlib.Tb_RiscV_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:34]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:35]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:38]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:47]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:49]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:51]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:55]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 12 for port imm_in [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:56]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 12 for port Result [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:60]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 5 for port ShiftAmount [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 20 for port imm_in [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:64]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:67]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Enable [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:68]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 33 for port out [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/io/FPGADigit.v:35]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 12 for port imm_in [D:/MyFile/code/Vivado/Risc_V2/cpu21-riscv/RiscV/verilog/circuit/RiscV_DataPath.v:61]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

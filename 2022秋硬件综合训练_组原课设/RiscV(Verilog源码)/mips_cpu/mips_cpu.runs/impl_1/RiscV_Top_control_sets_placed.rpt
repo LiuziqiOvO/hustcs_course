@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Sep 14 17:15:30 2022
+| Host         : LAPTOP-F424RLVC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RiscV_Top_control_sets_placed.rpt
+| Design       : RiscV_Top
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    10 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             248 |           32 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             128 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------------------------+---------------------------+------------------+----------------+
+|         Clock Signal        |                Enable Signal               |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-----------------------------+--------------------------------------------+---------------------------+------------------+----------------+
+|  FPGADigit/u_divider/clk    |                                            |                           |                1 |              6 |
+|  clk_IBUF_BUFG              |                                            |                           |                4 |             16 |
+|  clk_IBUF_BUFG              |                                            | FPGADigit/u_divider/clk_N |                8 |             62 |
+|  clk_IBUF_BUFG              |                                            | u_divider1/clk_N_0        |                8 |             62 |
+|  clk_IBUF_BUFG              |                                            | u_divider2/clk_N          |                8 |             62 |
+|  clk_IBUF_BUFG              |                                            | u_divider3/clk_N          |                8 |             62 |
+|  n_0_1572_BUFG              |                                            |                           |               14 |             64 |
+|  clk_N_BUFG                 | Datapath/PC_Reg/S_type                     |                           |                8 |             64 |
+|  clk_N_BUFG                 | Datapath/PC_Reg/s_state_reg[31]_i_1__0_n_1 | rst_IBUF                  |               10 |             64 |
+|  clk_N_BUFG                 | Datapath/PC_Reg/E[0]                       | rst_IBUF                  |               16 |             64 |
+|  u_divider3/Result0__0_BUFG | Datapath/PC_Reg/RegWrite                   |                           |               12 |            192 |
++-----------------------------+--------------------------------------------+---------------------------+------------------+----------------+
+
+

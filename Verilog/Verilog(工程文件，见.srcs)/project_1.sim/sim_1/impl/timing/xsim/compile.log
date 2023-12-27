@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.sim/sim_1/impl/timing/xsim/dynamic_scan_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auto_add_tb
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/2.3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Choice
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Selector
+INFO: [VRFC 10-311] analyzing module _7Seg_Driver_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/3.1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/3.2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/3.3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f_divider_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/3.4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom8x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyFile/code/Vivado/project_1/project_1.srcs/sources_1/new/3.6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dynamic_scan

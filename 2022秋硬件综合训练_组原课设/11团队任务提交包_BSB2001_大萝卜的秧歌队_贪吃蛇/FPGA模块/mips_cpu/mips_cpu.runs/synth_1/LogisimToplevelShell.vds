@@ -1,0 +1,1029 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 30 17:42:35 2022
+# Process ID: 19048
+# Current directory: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1
+# Command line: vivado.exe -log LogisimToplevelShell.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LogisimToplevelShell.tcl
+# Log file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/LogisimToplevelShell.vds
+# Journal file: D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LogisimToplevelShell.tcl -notrace
+Command: synth_design -top LogisimToplevelShell -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 445.859 ; gain = 99.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LogisimToplevelShell' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:3]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_CPU_1_int' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:9]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized0' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized1' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized2' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized3' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized3' (1#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_PC' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_PC. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_PC' (2#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_PC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'RAM_Data_RAM' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:9]
+INFO: [Synth 8-3876] $readmem data file 'D:/lmq/yanshou/tw/c_snake/snake_data.txt' is read successfully [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Data_RAM' (3#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/RAM_Data_RAM.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_2' (4#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_4_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_4_INPUTS' (5#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Shifter_32_bit' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v:9]
+	Parameter ShifterMode bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shifter_32_bit' (6#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Shifter_32_bit.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOT_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_GATE' (7#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP' (8#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2' (9#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (10#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Instr_ROM' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:1]
+INFO: [Synth 8-3876] $readmem data file 'D:/lmq/yanshou/tw/c_snake/snake_instr.txt' is read successfully [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Instr_ROM' (11#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/ROM_Instr_ROM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (12#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (13#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v:9]
+	Parameter ExtendedBits bound to: 33 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (14#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized0' (14#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_Int1_Request_Register' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_Int1_Request_Register. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_Int1_Request_Register' (15#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_Int1_Request_Register.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_IE' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_IE. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_IE' (16#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_IE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_16' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v:9]
+	Parameter NrOfBits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_16' (17#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_3_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_3_INPUTS' (18#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_3_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LogisimCounter' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:9]
+	Parameter mode bound to: 0 - type: integer 
+	Parameter ClkEdge bound to: 1 - type: integer 
+	Parameter max_val bound to: -1 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_counter_value_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:122]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_counter_value_reg in module LogisimCounter. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'LogisimCounter' (19#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP_EPC' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP_EPC. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP_EPC' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP_EPC.v:9]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_state_reg_neg_edge_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:58]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_state_reg_reg in module REGISTER_FLIP_FLOP__parameterized0. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_FLIP_FLOP__parameterized0' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/REGISTER_FLIP_FLOP.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized0' (20#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_5_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_5_INPUTS' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator__parameterized0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator__parameterized0' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Comparator__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+	Parameter TwosComplement bound to: 1 - type: integer 
+	Parameter NrOfBits bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/arithmetic/Comparator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_2__parameterized1' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+	Parameter NrOfBits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_2__parameterized1' (21#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Alu_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_10_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_10_INPUTS' (22#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_8_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_8_INPUTS' (23#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_14_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_14_INPUTS' (24#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_14_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_7_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_7_INPUTS' (25#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_13_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_13_INPUTS' (26#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_13_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Alu_Controller' (27#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Alu_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Signal_Controller' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_7_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_7_INPUTS' (28#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_11_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_11_INPUTS' (29#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/OR_GATE_11_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_5_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_5_INPUTS' (30#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_6_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_6_INPUTS' (31#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_6_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_4_INPUTS' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_4_INPUTS' (32#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/gates/AND_GATE_4_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Signal_Controller' (33#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Signal_Controller.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_Controller' (34#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_Controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Regifile' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Regifile' (35#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Regifile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'L_type_Write_Data_Generator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_bus_4' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v:9]
+	Parameter NrOfBits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_bus_4' (36#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/plexers/Multiplexer_bus_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'L_type_Write_Data_Generator' (37#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/L_type_Write_Data_Generator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ImmGenerator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:2]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGenerator' (38#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ImmGenerator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_Request_Register_1_int' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:3]
+INFO: [Synth 8-6157] synthesizing module 'D_Flip_Flop' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:2]
+	Parameter ActiveLevel bound to: 1 - type: integer 
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register s_next_state_reg in module D_Flip_Flop. This is not a recommended register style for Xilinx devices  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:29]
+WARNING: [Synth 8-3848] Net Q_bar in module/entity D_Flip_Flop does not have driver. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'D_Flip_Flop' (39#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/D_Flip_Flop.v:2]
+WARNING: [Synth 8-350] instance 'D_Flip_4_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:49]
+WARNING: [Synth 8-350] instance 'D_Flip_4_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:56]
+WARNING: [Synth 8-350] instance 'D_Flip_1_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:64]
+WARNING: [Synth 8-350] instance 'D_Flip_1_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:71]
+WARNING: [Synth 8-350] instance 'D_Flip_2_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:80]
+WARNING: [Synth 8-350] instance 'D_Flip_2_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:87]
+WARNING: [Synth 8-350] instance 'D_Flip_3_0' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:95]
+WARNING: [Synth 8-350] instance 'D_Flip_3_1' of module 'D_Flip_Flop' requires 8 connections, but only 5 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_Request_Register_1_int' (40#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Interrupt_Request_Register_1_int.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (41#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_CPU_1_int' (42#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/Single_Cycle_CPU_1_int.v:9]
+WARNING: [Synth 8-350] instance 'Single_Cycle_CPU_1_int_0' of module 'Single_Cycle_CPU_1_int' requires 17 connections, but only 16 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:67]
+INFO: [Synth 8-6157] synthesizing module 'FPGADigit' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/FPGADigit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized4' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 5000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized4' (42#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/Counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (43#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/Counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:2]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (44#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/decoder3_8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'display_sel' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:2]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'display_sel' (45#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/display_sel.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_dec' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:2]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:7]
+INFO: [Synth 8-226] default block is never used [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_dec' (46#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/sevenseg_dec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FPGADigit' (47#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/FPGADigit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/.Xil/Vivado-19048-LAPTOP-TTBI6Q3I/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (48#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/.Xil/Vivado-19048-LAPTOP-TTBI6Q3I/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_for_display' of module 'clk_wiz_0' requires 4 connections, but only 2 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:93]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized5' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+	Parameter N bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized5' (48#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:2]
+WARNING: [Synth 8-567] referenced signal 'LedData' should be on the sensitivity list [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:114]
+INFO: [Synth 8-6157] synthesizing module 'vga_graph_mode' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_graph_mode.v:3]
+WARNING: [Synth 8-6104] Input port 'pixel_addr_to_change' has an internal driver [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_graph_mode.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'vga_graph_mode' (49#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_graph_mode.v:3]
+WARNING: [Synth 8-350] instance 'vga_graph_mode' of module 'vga_graph_mode' requires 10 connections, but only 9 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_display.v:3]
+	Parameter h_active_pixels bound to: 1920 - type: integer 
+	Parameter v_active_pixels bound to: 1080 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_sync_generator' [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_sync_generator.v:3]
+	Parameter h_active_pixels bound to: 1024 - type: integer 
+	Parameter h_front_porch bound to: 24 - type: integer 
+	Parameter h_sync_width bound to: 136 - type: integer 
+	Parameter h_back_porch bound to: 160 - type: integer 
+	Parameter h_total_piexls bound to: 1344 - type: integer 
+	Parameter v_active_pixels bound to: 768 - type: integer 
+	Parameter v_front_porch bound to: 3 - type: integer 
+	Parameter v_sync_width bound to: 6 - type: integer 
+	Parameter v_back_porch bound to: 29 - type: integer 
+	Parameter v_total_piexls bound to: 806 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync_generator' (50#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_sync_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (51#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/new/vga_display.v:3]
+WARNING: [Synth 8-350] instance 'vga_display' of module 'vga_display' requires 9 connections, but only 8 given [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:156]
+WARNING: [Synth 8-6014] Unused sequential element seg_for_display_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'LogisimToplevelShell' (52#1) [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:3]
+WARNING: [Synth 8-3331] design vga_display has unconnected port rst
+WARNING: [Synth 8-3331] design vga_graph_mode has unconnected port rst
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Q_bar
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Enable
+WARNING: [Synth 8-3331] design D_Flip_Flop has unconnected port Tick
+WARNING: [Synth 8-3331] design ImmGenerator has unconnected port IR[1]
+WARNING: [Synth 8-3331] design ImmGenerator has unconnected port IR[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 509.727 ; gain = 163.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[18] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[17] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[16] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[15] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[14] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[13] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[12] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[11] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[10] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[9] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[8] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[7] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[6] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[5] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[4] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[3] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[2] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[1] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+WARNING: [Synth 8-3295] tying undriven pin vga_graph_mode:pixel_addr_to_change[0] to constant 0 [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/toplevel/LogisimToplevelShell.v:136]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 509.727 ; gain = 163.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 509.727 ; gain = 163.250
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_for_display'
+Finished Parsing XDC File [d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_for_display'
+Parsing XDC File [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc]
+WARNING: [Vivado 12-507] No nets matched 'IR1_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'IR2_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'IR3_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'IR4_IBUF'. [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc:6]
+Finished Parsing XDC File [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/LogisimToplevelShell_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/xdc/LogisimToplevelShell.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LogisimToplevelShell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LogisimToplevelShell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 870.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 870.613 ; gain = 524.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 870.613 ; gain = 524.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  d:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_for_display. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 870.613 ; gain = 524.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ROM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/memory/LogisimCounter.v:97]
+INFO: [Synth 8-5545] ROM "s_carry0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "s_carry0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/verilog/circuit/ALU.v:29]
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "y_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "graph_to_change_to" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 870.613 ; gain = 524.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/GATE_18'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/REGISTER_FILE_2' (REGISTER_FLIP_FLOP) to 'Single_Cycle_CPU_1_int_0/REGISTER_FILE_4'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Comparator_4' (Comparator__parameterized0) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Comparator_6'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_26'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_33'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_35'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_36'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_40'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_70'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_83'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_109'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_119'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_126'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_151'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_165'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_169'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_170'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_176'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_180'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_197'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_203'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_210'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_217'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_227'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_258'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_264'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_280'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_1' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_281'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_29'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_50'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_73'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_76'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_77'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_80'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_137'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_175'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_193'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_231'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_260'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_286'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_2' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_287'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_14'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_18'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_22'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_23'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_47'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_51'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_69'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_71'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_74'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_84'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_86'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_87'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_103'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_111'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_116'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_121'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_124'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_132'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_143'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_152'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_158'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_162'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_172'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_183'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_188'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_194'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_216'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_220'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_228'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_232'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_238'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_242'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_245'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_249'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_261'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_268'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_269'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_270'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_285'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_3' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_288'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_16'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_27'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_42'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_52'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_57'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_66'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_81'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_82'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_93'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_95'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_101'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_105'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_110'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_113'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_118'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_122'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_130'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_131'
+INFO: [Synth 8-223] decloning instance 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_5' (NOT_GATE) to 'Single_Cycle_CPU_1_int_0/Single_Cycle_Controller_1/Alu_Controller_1/GATE_136'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 37    
+	 880 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LogisimToplevelShell 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divider__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module REGISTER_FLIP_FLOP_PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Multiplexer_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module REGISTER_FLIP_FLOP 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Multiplexer_bus_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ROM_Instr_ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 880 Input     32 Bit        Muxes := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module Multiplexer_bus_2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module REGISTER_FLIP_FLOP_Int1_Request_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module REGISTER_FLIP_FLOP_IE 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Multiplexer_bus_16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module LogisimCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module REGISTER_FLIP_FLOP_EPC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module REGISTER_FLIP_FLOP__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Multiplexer_bus_2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module Regifile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module Multiplexer_bus_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module ImmGenerator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module D_Flip_Flop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  12 Input     32 Bit        Muxes := 1     
+Module Single_Cycle_CPU_1_int 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module divider__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module decoder3_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module divider__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_sync_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_display 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element divider_cpu1/counter_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:12]
+WARNING: [Synth 8-6014] Unused sequential element divider_cpu1/clk_N_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:13]
+INFO: [Synth 8-5545] ROM "divider_cpu2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu4/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu4/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element divider_count/counter_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:12]
+WARNING: [Synth 8-6014] Unused sequential element divider_count/clk_N_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:13]
+WARNING: [Synth 8-6014] Unused sequential element div/counter_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:12]
+WARNING: [Synth 8-6014] Unused sequential element div/clk_N_reg was removed.  [D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.srcs/sources_1/imports/io/divider.v:13]
+INFO: [Synth 8-5546] ROM "graph_to_change_to" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "s_carry0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu4/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu4/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "FPGADigit_0/u_divider/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "FPGADigit_0/u_divider/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "vga_display/vga_sync_generator/y_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "graph_to_change_to" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Single_Cycle_CPU_1_int_0/\REGISTER_FILE_5/s_state_reg_reg[0]_C )
+WARNING: [Synth 8-3332] Sequential element (REGISTER_FILE_3/s_state_reg_reg[0]_C) is unused and will be removed from module Single_Cycle_CPU_1_int.
+WARNING: [Synth 8-3332] Sequential element (REGISTER_FILE_3/s_state_reg_reg[0]_P) is unused and will be removed from module Single_Cycle_CPU_1_int.
+WARNING: [Synth 8-3332] Sequential element (REGISTER_FILE_5/s_state_reg_reg[0]_C) is unused and will be removed from module Single_Cycle_CPU_1_int.
+WARNING: [Synth 8-3332] Sequential element (REGISTER_FILE_5/s_state_reg_reg[0]_P) is unused and will be removed from module Single_Cycle_CPU_1_int.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:07 . Memory (MB): peak = 870.613 ; gain = 524.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+|Module Name              | RTL Object               | Inference | Size (Depth x Width) | Primitives         | 
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+|Single_Cycle_CPU_1_int_0 | Regifile_1/registers_reg | Implied   | 32 x 32              | RAM32M x 12        | 
+|Single_Cycle_CPU_1_int_0 | RAM_1/mem_reg            | Implied   | 16 K x 32            | RAM256X1S x 2048   | 
+|LogisimToplevelShell     | vga_graph_mode/ram_reg   | Implied   | 16 K x 12            | RAM64M x 768       | 
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_for_display/clk_out1' to pin 'clk_for_display/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:19 . Memory (MB): peak = 874.195 ; gain = 527.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:34 . Memory (MB): peak = 932.973 ; gain = 586.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+|Module Name              | RTL Object               | Inference | Size (Depth x Width) | Primitives         | 
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+|Single_Cycle_CPU_1_int_0 | Regifile_1/registers_reg | Implied   | 32 x 32              | RAM32M x 12        | 
+|Single_Cycle_CPU_1_int_0 | RAM_1/mem_reg            | Implied   | 16 K x 32            | RAM256X1S x 2048   | 
+|LogisimToplevelShell     | vga_graph_mode/ram_reg   | Implied   | 16 K x 12            | RAM64M x 768       | 
++-------------------------+--------------------------+-----------+----------------------+--------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_CPU_1_int_0/REGISTER_FILE_1/s_state_reg_reg[0]) is unused and will be removed from module LogisimToplevelShell.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_CPU_1_int_0/REGISTER_FILE_7/s_state_reg_reg[0]) is unused and will be removed from module LogisimToplevelShell.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:33 ; elapsed = 00:02:49 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_for_display has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:37 ; elapsed = 00:02:54 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:38 ; elapsed = 00:02:54 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:02:57 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:02:58 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:02:58 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:02:58 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     5|
+|3     |CARRY4    |    97|
+|4     |LUT1      |     6|
+|5     |LUT2      |   296|
+|6     |LUT3      |   163|
+|7     |LUT4      |   203|
+|8     |LUT5      |   342|
+|9     |LUT6      |  2283|
+|10    |MUXF7     |   705|
+|11    |MUXF8     |   324|
+|12    |RAM256X1S |  2048|
+|13    |RAM32M    |    12|
+|14    |RAM64M    |   768|
+|15    |FDCE      |   228|
+|16    |FDRE      |   173|
+|17    |LDC       |     2|
+|18    |IBUF      |    10|
+|19    |OBUF      |    34|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-----------------------------------------+------+
+|      |Instance                               |Module                                   |Cells |
++------+---------------------------------------+-----------------------------------------+------+
+|1     |top                                    |                                         |  7701|
+|2     |  FPGADigit_0                          |FPGADigit                                |    66|
+|3     |    u_counter                          |Counter                                  |    14|
+|4     |    u_divider                          |divider__parameterized4                  |    52|
+|5     |  Single_Cycle_CPU_1_int_0             |Single_Cycle_CPU_1_int                   |  5508|
+|6     |    RAM_1                              |RAM_Data_RAM                             |  2899|
+|7     |    ADDER2C_1                          |Adder                                    |     8|
+|8     |    ADDER2C_2                          |Adder_0                                  |    22|
+|9     |    COUNTER_1                          |LogisimCounter                           |   112|
+|10    |    Comparator_1                       |Comparator                               |     3|
+|11    |    Comparator_2                       |Comparator_1                             |     4|
+|12    |    Comparator_3                       |Comparator_2                             |     4|
+|13    |    Comparator_4                       |Comparator_3                             |     5|
+|14    |    Comparator_5                       |Comparator_4                             |     3|
+|15    |    Interrupt_Request_Register_1_int_1 |Interrupt_Request_Register_1_int         |    24|
+|16    |      D_Flip_1_0                       |D_Flip_Flop                              |     3|
+|17    |      D_Flip_1_1                       |D_Flip_Flop_14                           |     2|
+|18    |      D_Flip_2_0                       |D_Flip_Flop_15                           |     3|
+|19    |      D_Flip_2_1                       |D_Flip_Flop_16                           |     3|
+|20    |      D_Flip_3_0                       |D_Flip_Flop_17                           |     3|
+|21    |      D_Flip_3_1                       |D_Flip_Flop_18                           |     4|
+|22    |      D_Flip_4_0                       |D_Flip_Flop_19                           |     3|
+|23    |      D_Flip_4_1                       |D_Flip_Flop_20                           |     3|
+|24    |    L_type_Write_Data_Generator_1      |L_type_Write_Data_Generator              |    17|
+|25    |      MUX_1                            |Multiplexer_bus_2_13                     |    17|
+|26    |    MUX_10                             |Multiplexer_bus_16                       |     3|
+|27    |    MUX_12                             |Multiplexer_bus_2                        |    14|
+|28    |    MUX_14                             |Multiplexer_bus_2_5                      |    30|
+|29    |    MUX_15                             |Multiplexer_bus_2_6                      |    57|
+|30    |    MUX_2                              |Multiplexer_bus_2_7                      |     1|
+|31    |    MUX_3                              |Multiplexer_bus_2_8                      |    29|
+|32    |    MUX_4                              |Multiplexer_bus_2_9                      |    13|
+|33    |    MUX_6                              |Multiplexer_bus_2_10                     |    31|
+|34    |    MUX_8                              |Multiplexer_bus_2_11                     |     1|
+|35    |    REGISTER_FILE_1                    |REGISTER_FLIP_FLOP_PC                    |  1448|
+|36    |    REGISTER_FILE_2                    |REGISTER_FLIP_FLOP                       |     1|
+|37    |    REGISTER_FILE_3                    |REGISTER_FLIP_FLOP_12                    |     1|
+|38    |    REGISTER_FILE_5                    |REGISTER_FLIP_FLOP_Int1_Request_Register |     1|
+|39    |    REGISTER_FILE_6                    |REGISTER_FLIP_FLOP_IE                    |     2|
+|40    |    REGISTER_FILE_7                    |REGISTER_FLIP_FLOP_EPC                   |    31|
+|41    |    REGISTER_FILE_8                    |REGISTER_FLIP_FLOP__parameterized0       |   375|
+|42    |    Regifile_1                         |Regifile                                 |   211|
+|43    |    divider_cpu2                       |divider__parameterized1                  |    53|
+|44    |    divider_cpu3                       |divider__parameterized2                  |    53|
+|45    |    divider_cpu4                       |divider__parameterized3                  |    52|
+|46    |  vga_display                          |vga_display                              |   221|
+|47    |    vga_sync_generator                 |vga_sync_generator                       |   208|
+|48    |  vga_graph_mode                       |vga_graph_mode                           |  1855|
++------+---------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:42 ; elapsed = 00:02:58 . Memory (MB): peak = 981.652 ; gain = 635.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:28 ; elapsed = 00:02:47 . Memory (MB): peak = 981.652 ; gain = 274.289
+Synthesis Optimization Complete : Time (s): cpu = 00:02:42 ; elapsed = 00:02:59 . Memory (MB): peak = 981.652 ; gain = 635.176
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3966 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2830 instances were transformed.
+  LDC => LDCE: 2 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 768 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+299 Infos, 68 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:57 ; elapsed = 00:03:15 . Memory (MB): peak = 981.652 ; gain = 646.688
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/lmq/yanshou/cpu_for_tw/Single_Cycle_CPU/Single_Cycle_CPU_1_int/mips_cpu/mips_cpu.runs/synth_1/LogisimToplevelShell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LogisimToplevelShell_utilization_synth.rpt -pb LogisimToplevelShell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.544 . Memory (MB): peak = 981.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 17:46:03 2022...
