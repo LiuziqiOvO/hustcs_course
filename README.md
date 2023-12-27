@@ -1,6 +1,11 @@
 # hustcs_course
 华科计算机学院，课程、考试、实验资料
 
+> 如何只下载某个仓库的一部分文件
+
+工具：http://tool.mkblog.cn/downgit/#/home
+
+
 - [ ] 复变函数
 
 - [ ] 电路理论
@@ -50,6 +55,3 @@
 
 
 
-> 如何只下载某个仓库的一部分文件
-
-工具：http://tool.mkblog.cn/downgit/#/home
